@@ -1,2 +1,2 @@
 # flwr-portfolio
-portfolio ೀ w/ react, js
+portfolio ೀ w/ html, css, motion js
