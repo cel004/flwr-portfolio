@@ -1,2 +1,2 @@
 # flwr-portfolio
-portfolio ೀ w/ html, css, motion js
+portfolio ೀ w/ html, css, js

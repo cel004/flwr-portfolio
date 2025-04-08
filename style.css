@@ -12,3 +12,38 @@ html, body {
     width: 100vw;
     scroll-behavior: smooth;
   }
+
+  @font-face {
+    font-family: 'Lo-Res';
+    src: url('./assets/LoRes9PlusOTWide-Regular.ttf') format('truetype');
+  }
+  #scrollVideo {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+  }
+  .lo-res {
+    font-family: 'Lo-Res', sans-serif;
+  }
+
+  .scroll-container video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+    pointer-events: none;
+  }
+  
+  .content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    padding: 4rem;
+  }
