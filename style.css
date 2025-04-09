@@ -16,6 +16,9 @@ body {
 @font-face {
   font-family: 'Lo-Res';
   src: url('./assets/LoRes9PlusOTWide-Regular.ttf') format('truetype');
+}
+
+@font-face {
   font-family: 'Lo-Res12';
   src: url('./assets/LoRes12OTNarrow-Regular.ttf') format('truetype');
 }
@@ -29,6 +32,12 @@ body {
 }
 .lo-res {
   font-family: 'Lo-Res', sans-serif;
+}
+.lo-res12 {
+  font-family: 'Lo-Res12', sans-serif;
+}
+p{
+  color: white;
 }
 .scroll-container video {
   position: fixed;
@@ -44,21 +53,30 @@ body {
 .content {
   position: relative;
   z-index: 1;
-  padding: 4rem;
+  padding: 2rem;
+}
+#scrollbar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .scroller {
   overflow: hidden;
-  width: 100%;
-  max-width: 1000px;
+  width: 55vw;
   position: relative;
   display: flex;
+  mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 .scroll-list {
   display: flex;
-  gap: 1rem;
+  gap: 0.5rem;
   animation: scroll 20s linear infinite;
   flex-direction: row;
-  padding-left: 1rem;
+  padding-left: 0.5rem;
 }
 .icon-item {
   list-style: none;
@@ -71,12 +89,12 @@ body {
   color: white;
 }
 .icon-container img {
-  width: 5vw;
+  width: 4vw;
   height: auto;
 }
 .icon-container span {
   font-family: 'Lo-Res12', sans-serif;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 .icon-label {
   margin-top: 0.5rem;
